@@ -1,0 +1,28 @@
+{
+  "name": "relampago-bot",
+  "version": "0.0.2",
+  "description": "Plantilla cool.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "mongoose": "^5.10.7",
+    "node-fetch": "^2.6.1",
+    "discord-ytdl-core": "^4.0.9",
+    "ytsr": "^1.0.2",
+    "ytpl": "^1.0.0",
+    "@discordjs/opus": "^0.3.2",
+    "ffmpeg-static": "^4.2.7",
+    "canvas": "^2.6.1"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/relampago"
+  },
+  "license": "MIT",
+  "type": "commonjs"
+}

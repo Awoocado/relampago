@@ -1,0 +1,6 @@
+{
+  "throttle": 1000000,
+  "install": { "include": ["^package\\.json$", "^\\.env$"] },
+  "restart": { "include": ["\\.js$", "\\.json"], "exclude": ["^/", "^dist/"] },
+  "_nota1": "borra esto y agregalo para reiniciar el bot"
+}
