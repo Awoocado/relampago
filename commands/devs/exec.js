@@ -22,6 +22,7 @@ exports.run = async (client, message, args) => {
   }
 };
 exports.config = {
+  "category": "dev",
   "name": "execute",
   "description": "Ejecuta un comando en la consola",
   "usage": "execute [comando]",

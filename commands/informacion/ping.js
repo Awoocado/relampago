@@ -13,6 +13,7 @@ exports.run = async (client, message, args) =>{
  });
 }
 exports.config = {
+  "category": "informacion",
   "name": "ping",
   "description": "Muestra el ping del bot",
   "usage": "ping",

@@ -1,3 +1,4 @@
+
 exports.run = async (client, message) => {
   if (message.author.bot) return;
   if (!message.guild) return;
@@ -13,25 +14,26 @@ exports.run = async (client, message) => {
       message.channel.send(a[2].content);
     }
   });
+  const afkme = await message.author.tieneAFK()
+  { 
+    if(afkme === "true") {
+    message.channel.send(message.author.tag + ' He removido tu afk')
+      message.author.resetAFK()
+    }
+  }
+
   const prefix = message.guild.cache.prefix ? message.guild.prefix : await message.guild.getPrefix();
   if (!message.content.startsWith(prefix)) return;
   const args = message.content.slice(prefix.length).split(/ +/g);
   const cmdname = args.shift();
+  if(!cmdname) return;
   const cmd = global.botCommands.get(cmdname.toLowerCase()) || global.botCommands.find(e => e.config.alias && e.config.alias.includes(cmdname.toLowerCase()));
   //const client_mention = new RegExp(`^<@!?${client.user.id}>( |)$`);
   try {
-    if (cmd) cmd.run(client, message, args);
+    if (cmd) await cmd.run(client, message, args);
   } catch (err) {
     message.channel.send("Error: " + err).catch(err => {});
   } finally {
     message.channel.stopTyping(true);
   }
 };
-/*
-Plantilla de exports.config
-exports.config = { 
-"name": "",
-"description": "",
-"usage": "",
-"alias": "[]"
-*/

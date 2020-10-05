@@ -6,6 +6,7 @@ exports.run = async(client, message, args) => {
 }
 
 exports.config = {
+  "category": "configuracion",
   "name": "setprefix",
   "description": "Establece un prefix para el servidor",
   "usage": "setprefix",

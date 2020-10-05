@@ -13,6 +13,7 @@ if(!texto) return message.channel.send("Tienes que escribir un mensaje!")
 
 }
 exports.config = {
+  "category": "utilidad",
   "name": "tell",
   "description": "Di algo con el bot",
   "usage": "tell [texto]",

@@ -50,8 +50,9 @@ const miembro = message.mentions.members.first() || message.guild.members.cache.
 
 }
 exports.config = {
+  "category": "diversion",
   "name": "sayimage",
   "description": "sayimage",
   "usage": "sayimage [mencion o id] [texto]",
-  "alias": ["sayimage","sayi", "sayimg"]
+  "alias": ["sayimage", "sayi", "sayimg"]
 }; 

@@ -7,6 +7,6 @@
 */
 exports.code = function(lang, code) {
   if(!lang) throw new TypeError("No has puesto el lenguaje")
-  if(!code) throw new TypeError("No has puesto el codigo idiota");
+  if(!code) throw new TypeError("No has puesto el codigo");
   return "```" + lang +"\n" + code +"```";
 }

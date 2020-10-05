@@ -32,6 +32,7 @@ exports.run = async (client,message,args) => {
 
 
 exports.config = {
+"category": "utilidad",
   "name": "poll",
   "description": "Crea una encuesta de si o no",
   "usage": "poll [pregunta]",
