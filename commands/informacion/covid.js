@@ -1,15 +1,14 @@
 const Discord = require('discord.js');
-const superagent = require("superagent");
 const fetch = require("node-fetch")
 
 exports.run = (client, message, args) =>{
 
-  let pais = args[0] 
+  let pais = args.join(' ')
   if(!pais) return message.channel.send(":x: | Coloque el nombre de un pais").then(m => m.delete({timeout: 7000})) 
 
-  fetch(`https://corona.lmao.ninja/v2/countries/${pais}`).then(r=>r.json()).then(body => {
+  fetch(`https://corona.lmao.ninja/v2/countries/${encodeURIComponent(pais)}`).then(r=>r.json()).then(body => {
 
-  //:ok_hand:
+  //:ok_hand:impres
   if(body.message) return message.channel.send(":x: | Pais invalido").then(m => m.delete({timeout: 7000})) 
 
   

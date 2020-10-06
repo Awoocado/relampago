@@ -52,7 +52,7 @@ exports.run = (client, message, args) =>{
    .addField('¿Es un bot?', `${user.bot ? "Si" : "No"}`)
    .addField('Creó su cuenta el',`${user.createdAt.toLocaleString()}`)
    .addField('Presencia:', `Jugando a: ${user.presence.activities[0].name === "CUSTOM_STATUS" ? user.presence.activities[0].name : 'No está jugando a nada.'}\nEstado personalizado: ${user.presence.activities[0].name === 'Custom Status' ? user.presence.activities[0].state : "Ninguno"}`)
-   //.addField('Estado personalizado:', )
+   //.addField('Estado personalizado:', )  
   .addField('Permisos', `\`\`\`css\n${message.guild.member(user).permissions.toArray().join(', ')}\`\`\``)//lel
   message.channel.send(embed)
 }

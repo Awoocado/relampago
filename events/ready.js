@@ -6,7 +6,7 @@ exports.run = client => {
   //Logs
   console.log(`${client.user.tag} está listo!`);
   //webhook por monoverde😎
-  //global.webhook.send(`${client.user.tag} está listo!`);
+  global.webhook.send(`${client.user.tag} está listo!`);
   //Mucho spam
   //Presencias
   setInterval(function() {
@@ -14,7 +14,7 @@ exports.run = client => {
       "r!help | Ejecuta este comando.",
       "Soy el mejor bot del mundo 😎",
       "Desarrollando comandos 😎",
-      "El barrio me respalda 😎"
+      "El barrio me respalda 😎",
     ];
     let status = sta2s[Math.floor(Math.random() * sta2s.length)];
     client.user.setPresence({

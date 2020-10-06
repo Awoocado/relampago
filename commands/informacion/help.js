@@ -6,12 +6,6 @@ const funcd = global.botCommands.filter(a=> a.config.category === "diversion").m
 const utilcd = global.botCommands.filter(a=> a.config.category === "utilidad").map(a => `${a.config.name}`)
 const musiccd = global.botCommands.filter(a=> a.config.category === "musica").map(a => `${a.config.name}`)
 const configcd = global.botCommands.filter(a=> a.config.category === "configuracion").map(a => `${a.config.name}`)
-
-  
-  
-  
-  
-  
     const embudo = new Discord.MessageEmbed()
   .setTitle('Comando de ayuda')
   .setDescription('Soy un bot multifunciones o.0, cuento con ' + global.botCommands.size + ' comandos')
@@ -62,5 +56,6 @@ exports.config = {
   "usage": "help <comando>",
   "alias": ["help","h", "ayuda", "listacomandos", "comandos"]
 };
-/*Creditos:
-IlUCK*/
+/*Creditos: 
+ILUCK
+*/

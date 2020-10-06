@@ -3,4 +3,4 @@
   "install": { "include": ["^package\\.json$", "^\\.env$"] },
   "restart": { "include": ["\\.js$", "\\.json"], "exclude": ["^/", "^dist/"] },
   "_nota1": "borra el corchete guarda, agregalo y guarda para reiniciar el bot"
-}
+}  

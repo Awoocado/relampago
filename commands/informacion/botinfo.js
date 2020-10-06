@@ -10,7 +10,7 @@ exports.run = (client, message, args) =>{
   .addField('Libreria:', `Discord.js ^${Discord.version}`)
   .addField('Ping:', `${client.ws.ping}`)
   .addField('Memoria:', `${(process.memoryUsage().heapUsed / 512 / 512).toFixed(2)} MB`)
-  .addField("Contribuidores:", "AndreMor#0008 \nAwoo#0741 \nMonoverde 🎃#8888 \nLil MARCROCK22#2222 \nILuck₂₀₆₀ ✯Team VR✯卩卄乂丂匚ʅɧ#2060 \nDonut#8847 \nDerky#0004 \nchase ᭧#4773\nAdrian..  ⚡#6708")
+  .addField("Contribuidores:", "AndreMor#0008 \nAwoo#0741 \nMonoverde 🎃#8888 \nLil MARCROCK22#2222 \nILuck₂₀₆₀ ✯Team VR✯卩卄乂丂匚ʅɧ#2060 \nZig#5213 \nDerky#0004 \nchase ᭧#4773\nAdrian..  ⚡#6708")
   .setColor('RANDOM')
   .setTimestamp()
   message.channel.send(embed) 

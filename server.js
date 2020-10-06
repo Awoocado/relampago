@@ -51,8 +51,7 @@ global.getData = async ({ ...find }, model) => {
 }
 global.updateData = async ({ ...find }, { ...newValue }, { ...newObject }, model) => {
     const { readdir } = require("fs").promises;
-    const db_files = await readdir(require("path").join(__dirname, "./models/"));
-    const available_models = db_files.map(elem => elem.endsWith("js") ? elem.slice(0, -3) : elem);
+    const db_files = await readdir(require("path").join(__dirname, "./models/"));    const available_models = db_files.map(elem => elem.endsWith("js") ? elem.slice(0, -3) : elem);
     if (!available_models.includes(model)) return console.log('[UPDATE_DATA]: Modelo no encontrado!')
     let db = require('./models/' + model + '.js');
     let getModel = await db.findOneAndUpdate(find, newValue);
@@ -66,4 +65,4 @@ global.updateData = async ({ ...find }, { ...newValue }, { ...newObject }, model
   
   Ajustadas por: AndreMor (AndreMor)
 
-*/
+*/1

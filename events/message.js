@@ -14,9 +14,9 @@ exports.run = async (client, message) => {
       message.channel.send(a[2].content);
     }
   });
-  const afkme = await message.author.tieneAFK()
+  const afkme = await message.author.getAFK()
   { 
-    if(afkme === "true") {
+    if(afkme === true) {
     message.channel.send(message.author.tag + ' He removido tu afk')
       message.author.resetAFK()
     }

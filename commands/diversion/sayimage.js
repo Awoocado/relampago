@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const Canvas = require("canvas");
 
 exports.run = async (client, message, args) => {
-const miembro = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
+const miembro = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.author;
         if (!miembro) return message.channel.send("Menciona a alguien!")
         const mensaje = args.slice(1).join(" ")
         if (!mensaje) return message.channel.send("Pon un mensaje")

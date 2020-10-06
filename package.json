@@ -15,7 +15,6 @@
     "ffmpeg-static": "^4.2.7",
     "mongoose": "^5.10.7",
     "node-fetch": "^2.6.1",
-    "superagent": "^6.1.0",
     "ytpl": "^1.0.0",
     "ytsr": "^1.0.2"
   },

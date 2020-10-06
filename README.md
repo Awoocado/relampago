@@ -15,7 +15,7 @@ https://discord.gg/g3VQtWu
 * Awoo\#0741
 * AndreMor\#0008
 * Derky\#0004
-* DonutProgrammer\#8847
+* Zig\#5213
 * Monoverde\#8888
 * Lil MARCKROCK22\#2222
 * ILuck₂₀₆₀ ✯Team VR✯\#2060
